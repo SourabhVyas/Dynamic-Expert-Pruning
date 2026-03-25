@@ -3,8 +3,7 @@ out
 website/
 docs-minimind/
 MiniMind2/
-trainer/
-dataset/
+data/
 checkpoints/
 tc2_jobscript.sh
 logs_tc2/

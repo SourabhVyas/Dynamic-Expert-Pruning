@@ -48,19 +48,20 @@ def main():
     args = parser.parse_args()
     
     prompts = [
-        '你有什么特长？',
-        '为什么天空是蓝色的',
-        '请用Python写一个计算斐波那契数列的函数',
-        '解释一下"光合作用"的基本过程',
-        '如果明天下雨，我应该如何出门',
-        '比较一下猫和狗作为宠物的优缺点',
-        '解释什么是机器学习',
-        '推荐一些中国的美食'
+        "What special skills do you have?",
+        "Why is the sky blue?",
+        "Please write a Python function to calculate the Fibonacci sequence",
+        "Explain the basic process of 'photosynthesis'",
+        "If it rains tomorrow, how should I go out?",
+        "Compare the pros and cons of cats and dogs as pets",
+        "Explain what machine learning is",
+        "Recommend some Chinese cuisine"
     ]
+
     
     conversation = []
     model, tokenizer = init_model(args)
-    input_mode = int(input('[0] 自动测试\n[1] 手动输入\n'))
+    input_mode = int(input('[0] Automatic Test\n[1] Manual Input\n'))
     streamer = TextStreamer(tokenizer, skip_prompt=True, skip_special_tokens=True)
     
     prompt_iter = prompts if input_mode == 0 else iter(lambda: input('💬: '), '')
