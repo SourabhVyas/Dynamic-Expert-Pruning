@@ -1,0 +1,50 @@
+{"id":"qa_why_sky_blue","prompt":"为什么天空是蓝色的？请用一句话回答。","match_type":"contains_all","expected":["蓝","散射"],"weight":1.0}
+{"id":"qa_ml_def","prompt":"什么是机器学习？请简要定义。","match_type":"contains_any","expected":["从数据中学习","机器学习","模型"],"weight":1.0}
+{"id":"math_2_plus_3","prompt":"2+3等于多少？只回答数字。","match_type":"numeric","answer":5,"tolerance":0.0,"weight":1.0}
+{"id":"math_12_times_8","prompt":"12乘以8等于多少？只回答数字。","match_type":"numeric","answer":96,"tolerance":0.0,"weight":1.0}
+{"id":"code_fib","prompt":"请写一个Python函数计算斐波那契数列，函数名为fib。","match_type":"contains_all","expected":["def","fib"],"weight":1.0}
+{"id":"commonsense_rain","prompt":"如果明天下雨，外出前应该做什么准备？","match_type":"contains_any","expected":["雨伞","伞","防水","雨衣"],"weight":1.0}
+{"id":"fact_capital_china","prompt":"中国的首都是哪里？只回答地名。","match_type":"contains_any","expected":["北京"],"weight":1.0}
+{"id":"fact_newton_book","prompt":"牛顿在哪一年发表《自然哲学的数学原理》？只回答年份。","match_type":"numeric","answer":1687,"tolerance":0.0,"weight":1.0}
+{"id":"fact_boiling_point","prompt":"标准大气压下，水的沸点是多少摄氏度？只回答数字。","match_type":"numeric","answer":100,"tolerance":0.0,"weight":1.0}
+{"id":"fact_longest_river_china","prompt":"中国最长的河流是什么？只回答名称。","match_type":"contains_any","expected":["长江"],"weight":1.0}
+{"id":"fact_speed_of_light","prompt":"真空中的光速大约是多少米每秒？请用科学计数法表示。","match_type":"contains_any","expected":["3","10","8"],"weight":1.0}
+{"id":"code_palindrome","prompt":"请写一个Python函数is_palindrome，判断字符串是否回文。","match_type":"contains_all","expected":["def","is_palindrome"],"weight":1.0}
+{"id":"code_two_sum","prompt":"请用Python实现two_sum(nums, target)函数，返回两个下标。","match_type":"contains_all","expected":["def","two_sum"],"weight":1.0}
+{"id":"code_sql_top3","prompt":"写一条SQL语句，查询sales表中销售额最高的前三条记录。","match_type":"contains_all","expected":["SELECT","FROM","LIMIT"],"weight":1.0}
+{"id":"code_bug_fix","prompt":"修复下面代码中的除零问题并给出改进版本：result = a / b","match_type":"contains_any","expected":["if","try","except"],"weight":1.0}
+{"id":"code_complexity","prompt":"请解释快速排序的平均时间复杂度和最坏时间复杂度。","match_type":"contains_all","expected":["O(n log n)","O(n^2)"],"weight":1.0}
+{"id":"long_answer_ai_ethics","prompt":"请详细论述AI在教育场景中的机会、风险和治理建议，至少分三点展开。","match_type":"contains_all","expected":["机会","风险","建议"],"weight":1.0}
+{"id":"long_answer_llm_training","prompt":"请系统说明一个小模型从预训练到SFT再到RLHF的大致流程，并讨论每个阶段目标。","match_type":"contains_all","expected":["预训练","SFT","RLHF"],"weight":1.0}
+{"id":"long_answer_pruning_tradeoff","prompt":"请分析MoE动态剪枝可能带来的收益与风险，并给出你建议的评测指标。","match_type":"contains_all","expected":["速度","准确率","延迟"],"weight":1.0}
+{"id":"toolcall_time","prompt":"请调用工具查询当前时间，并返回最终时间结果。","match_type":"contains_any","expected":["<tool_call>","tool_call","时间"],"weight":1.0}
+{"id":"toolcall_math","prompt":"请调用计算工具求 234*567 的结果，并给出答案。","match_type":"contains_any","expected":["<tool_call>","234","567"],"weight":1.0}
+{"id":"toolcall_weather","prompt":"请调用天气工具查询北京天气，并简要总结。","match_type":"contains_any","expected":["<tool_call>","北京","天气"],"weight":1.0}
+{"id":"toolcall_multi_step","prompt":"请先调用随机数工具生成1到50的随机数，再调用数学工具计算其平方。","match_type":"contains_any","expected":["<tool_call>","随机","平方"],"weight":1.0}
+{"id":"fact_h2o_formula","prompt":"水的化学式是什么？只回答化学式。","match_type":"contains_any","expected":["H2O"],"weight":1.0}
+{"id":"fact_earth_satellite","prompt":"地球的天然卫星叫什么？只回答名称。","match_type":"contains_any","expected":["月球"],"weight":1.0}
+{"id":"fact_largest_ocean","prompt":"地球上面积最大的海洋是什么？","match_type":"contains_any","expected":["太平洋"],"weight":1.0}
+{"id":"fact_cpu_fullname","prompt":"CPU 的英文全称是什么？","match_type":"contains_any","expected":["Central Processing Unit"],"weight":1.0}
+{"id":"fact_http_port","prompt":"HTTP 默认端口是多少？只回答数字。","match_type":"numeric","answer":80,"tolerance":0.0,"weight":1.0}
+{"id":"fact_https_port","prompt":"HTTPS 默认端口是多少？只回答数字。","match_type":"numeric","answer":443,"tolerance":0.0,"weight":1.0}
+{"id":"fact_pythagorean","prompt":"勾股定理是什么？请用公式表达。","match_type":"contains_all","expected":["a","b","c"],"weight":1.0}
+{"id":"code_reverse_list","prompt":"请写一个Python函数reverse_list，返回列表逆序结果。","match_type":"contains_all","expected":["def","reverse_list"],"weight":1.0}
+{"id":"code_binary_search","prompt":"请写一个Python函数binary_search(arr, target)。","match_type":"contains_all","expected":["def","binary_search"],"weight":1.0}
+{"id":"code_json_parse","prompt":"请给出Python示例：把JSON字符串解析为字典，并读取name字段。","match_type":"contains_all","expected":["json","loads"],"weight":1.0}
+{"id":"code_http_get","prompt":"请用Python requests写一个GET请求示例并打印状态码。","match_type":"contains_all","expected":["requests","get","status_code"],"weight":1.0}
+{"id":"code_sql_join","prompt":"写一条SQL语句，查询users与orders的内连接结果。","match_type":"contains_all","expected":["JOIN","ON"],"weight":1.0}
+{"id":"code_dp_explain","prompt":"请解释动态规划的核心思想，并给出一个典型题目示例。","match_type":"contains_any","expected":["状态","转移","子问题"],"weight":1.0}
+{"id":"code_tree_traversal","prompt":"请简述二叉树的前序、中序、后序遍历区别。","match_type":"contains_all","expected":["前序","中序","后序"],"weight":1.0}
+{"id":"long_answer_rag","prompt":"请详细说明RAG系统的组成、检索策略和常见失败模式。","match_type":"contains_all","expected":["检索","生成","失败"],"weight":1.0}
+{"id":"long_answer_db_design","prompt":"请详细说明如何为电商订单系统设计数据库表，并讨论索引策略。","match_type":"contains_all","expected":["订单","索引","主键"],"weight":1.0}
+{"id":"long_answer_agent","prompt":"请系统阐述Agent系统中的规划、记忆与工具调用协同机制。","match_type":"contains_all","expected":["规划","记忆","工具"],"weight":1.0}
+{"id":"long_answer_eval","prompt":"请详细说明一个LLM评测体系应包含哪些指标，并给出落地建议。","match_type":"contains_all","expected":["准确率","鲁棒性","效率"],"weight":1.0}
+{"id":"long_answer_security","prompt":"请从输入校验、权限控制、审计日志三个方面讨论系统安全实践。","match_type":"contains_all","expected":["输入","权限","日志"],"weight":1.0}
+{"id":"long_answer_prd","prompt":"请写一份简要PRD大纲，主题是一个团队协作任务管理工具。","match_type":"contains_any","expected":["目标","功能","里程碑"],"weight":1.0}
+{"id":"long_answer_prompting","prompt":"请比较Zero-shot、Few-shot和CoT prompting的适用场景与优缺点。","match_type":"contains_all","expected":["Zero-shot","Few-shot","CoT"],"weight":1.0}
+{"id":"toolcall_exchange_rate","prompt":"请调用汇率工具查询USD到CNY汇率，并返回结果。","match_type":"contains_any","expected":["<tool_call>","USD","CNY"],"weight":1.0}
+{"id":"toolcall_translate","prompt":"请调用翻译工具把“今天天气很好”翻译成英文。","match_type":"contains_any","expected":["<tool_call>","翻译","英文"],"weight":1.0}
+{"id":"toolcall_text_length","prompt":"请调用文本统计工具，计算“hello world from minimind”的字符数与词数。","match_type":"contains_any","expected":["<tool_call>","字符","词"],"weight":1.0}
+{"id":"toolcall_unit_convert","prompt":"请调用单位换算工具，把10公里换成英里。","match_type":"contains_any","expected":["<tool_call>","10","公里"],"weight":1.0}
+{"id":"toolcall_chain_weather_time","prompt":"请先查询上海天气，再查询当前时间，最后给出一句综合建议。","match_type":"contains_any","expected":["<tool_call>","天气","时间"],"weight":1.0}
+{"id":"toolcall_chain_math_translate","prompt":"请先调用计算工具计算(15+25)*3，再把结果翻译成英文表达。","match_type":"contains_any","expected":["<tool_call>","计算","翻译"],"weight":1.0}
